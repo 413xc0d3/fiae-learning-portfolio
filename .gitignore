@@ -8,6 +8,7 @@ Thumbs.db
 *.log
 *.tmp
 *.temp
+logbuch.txt
 
 # Environment / secrets
 .env
