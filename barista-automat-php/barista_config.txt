@@ -1,0 +1,10 @@
+temperatur=20
+reinigungsLimit=10
+wahl=
+statusMeldung=Maschine frisch konfiguriert
+
+wasserStand=500
+bohnenStand=150
+milchStand=1000
+zuckerStand=100
+tassenZaehler=0
