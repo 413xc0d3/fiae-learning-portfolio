@@ -77,7 +77,22 @@ Behandelte Themen:
 
 Ordner: [`python-struktogramm-debugging/`](python-struktogramm-debugging/)
 
-### 6. Begrüßungsbeispiel – Java, OOP und MVC
+### 6. Python – Grundlagen, Datei-I/O und Datenbankzugriff
+Ausgewählte, gemeinsam im Unterricht erarbeitete Python-Übungen zu grundlegender Programmlogik, Dateiverarbeitung, Dictionaries und MySQL/MariaDB.
+
+Behandelte Themen:
+- Datentypen, Operatoren und Kontrollstrukturen
+- Schleifen und Benutzereingaben
+- `try` / `except` / `finally`
+- Lesen und Schreiben von Textdateien
+- Dictionaries und einfache Suchlogik
+- MySQL-Verbindung, `INSERT` und `SELECT`
+
+Ordner: [`python-grundlagen/`](python-grundlagen/)
+
+> Einordnung: Die Beispiele wurden gemeinsam im Unterricht anhand der zugehörigen Aufgabenstellungen erarbeitet. Sie dokumentieren den behandelten Lernstand und werden nicht als vollständig eigenständig entwickelte Anwendungen dargestellt.
+
+### 7. Begrüßungsbeispiel – Java, OOP und MVC
 Kleine Konsolenanwendung zur grundlegenden Trennung von Verarbeitung, Ein-/Ausgabe und Steuerung nach dem Model-View-Controller-Prinzip.
 
 Behandelte Themen:

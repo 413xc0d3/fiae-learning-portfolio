@@ -54,6 +54,14 @@ Für eine saubere öffentliche Darstellung wurden folgende Änderungen vorgenomm
 - Testfälle auf unterschiedliche Belegungszustände dokumentiert
 - mathematische Herleitung des tatsächlich entstehenden Schaltpunkts von 95 % ergänzt
 
+### Python – Grundlagen und Unterrichtsübungen
+- ausgewählte, gemeinsam im Unterricht erarbeitete Python-Übungen als zusammenhängenden Grundlagenblock aufbereitet
+- relative Dateipfade an die neue Portfolio-Struktur angepasst
+- scherzhafte beziehungsweise persönliche Unterrichtsausgaben bewusst unverändert erhalten
+- redundante oder für das Portfolio wenig aussagekräftige Einstiegsdateien nicht übernommen
+- fehlerhaften letzten Zwischenstand aus `eigeneFunktionen.py` nicht als regulären Portfolio-Code veröffentlicht
+- Datenbankbeispiele mit lokalem Beispielschema und Installationshinweis dokumentiert
+
 ### Java – MVC-Begrüßungsbeispiel
 - Unterrichtsstand aus `Quellcode/Java/MVCBeispiel` als Grundlage verwendet
 - Model, zwei View-Varianten und Controller gemeinsam aufgenommen
