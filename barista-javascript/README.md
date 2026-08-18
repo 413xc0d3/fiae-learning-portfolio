@@ -31,4 +31,19 @@ Diese Version zeigt bewusst eine **frühe Entwicklungsstufe**. Das Thema wurde s
 `index.html` direkt im Browser öffnen.
 
 ## Aufbereitung für das Portfolio
-Die vorhandene Unterrichtsfassung wurde inhaltlich nicht erweitert. Für die Veröffentlichung wurde `barista.html` lediglich als `index.html` übernommen, damit die Anwendung direkt über GitHub Pages aufgerufen werden kann.
+Für die erste Veröffentlichung wurde die vorhandene Unterrichtsfassung inhaltlich nicht erweitert. Für die Veröffentlichung wurde `barista.html` lediglich als `index.html` übernommen, damit die Anwendung direkt über GitHub Pages aufgerufen werden kann.
+
+## Eigenständige Weiterentwicklung nach dem Unterricht
+
+Die ursprüngliche Unterrichtsversion hat unbegrenzt Getränke zubereitet, ohne dass die vorhandenen Zutaten berücksichtigt wurden. Deshalb habe ich den Automaten um Vorräte für Wasser, Kaffee und Milch sowie um passende Verbrauchsmengen für beide Getränke erweitert.
+
+Vor der Zubereitung prüft das Programm, ob für das ausgewählte Getränk genügend Zutaten vorhanden sind. Ein Espresso benötigt Wasser und Kaffee, ein Latte zusätzlich Milch. Reichen die Vorräte aus, werden die jeweiligen Mengen abgezogen und die verbleibenden Vorräte angezeigt. Fehlt eine Zutat, wird eine passende Fehlermeldung ausgegeben und das Getränk nicht zubereitet.
+
+### Neue Funktionen
+
+- Anfangsvorräte für Wasser, Kaffee und Milch
+- eigene Verbrauchsmengen für Espresso und Latte
+- Prüfung der benötigten Zutaten vor jeder Zubereitung
+- Abzug der Zutaten nur bei ausreichenden Vorräten
+- Fehlermeldung für die jeweils fehlende Zutat
+- Anzeige der verbleibenden Vorräte nach erfolgreicher Zubereitung
