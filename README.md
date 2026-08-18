@@ -2,7 +2,7 @@
 
 Dieses Repository dokumentiert meinen aktuellen Lernstand in der laufenden Umschulung zum **Fachinformatiker für Anwendungsentwicklung (FIAE)**.
 
-Die enthaltenen Projekte sind **Unterrichts- und Übungsprojekte**. Einzelne Arbeitsschritte wurden zunächst selbstständig bearbeitet und anschließend gemeinsam im Unterricht weiterentwickelt beziehungsweise anhand von Referenzlösungen überprüft. Sie sind deshalb bewusst **nicht als vollständig eigenständig entwickelte Produktivprojekte** dargestellt.
+Die enthaltenen Projekte sind **Unterrichts- und Übungsprojekte**. Je nach Aufgabe wurden Arbeitsschritte selbstständig bearbeitet oder gemeinsam im Unterricht erarbeitet und anschließend nachvollzogen, getestet und bei Bedarf korrigiert. Sie sind deshalb bewusst **nicht als vollständig eigenständig entwickelte Produktivprojekte** dargestellt.
 
 ## Enthaltene Projekte
 
@@ -46,6 +46,19 @@ Behandelte Themen:
 - lokale Protokollierung von Aktionen
 
 Ordner: [`barista-automat-php/`](barista-automat-php/)
+
+### 4. Struktogramm-Fehleranalyse – Python
+Gemeinsam im Unterricht erarbeitetes Lernbeispiel zur Simulation und Analyse fehlerhafter Programmlogik bei einer Parkhausbelegung.
+
+Behandelte Themen:
+- Python-Funktionen und Parameter
+- Listen und Indexzugriff
+- Bedingungen und Schleifen
+- Testfälle
+- Fehlersuche und Analyse von Programmlogik
+- Übertragung eines Struktogramms in ausführbaren Code
+
+Ordner: [`python-struktogramm-debugging/`](python-struktogramm-debugging/)
 
 ## Einordnung meines Kenntnisstands
 
