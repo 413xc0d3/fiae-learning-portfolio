@@ -29,7 +29,14 @@ Für eine saubere öffentliche Darstellung wurden folgende Änderungen vorgenomm
 - nach dem Redirect beim Löschen `exit` ergänzt
 - `schema.sql` als reproduzierbares lokales Beispielschema ergänzt
 
-### Barista-Automat
+### Barista-Automat – JavaScript-Stufe
+- vorhandene HTML-/CSS-/JavaScript-Unterrichtsfassung aus dem Web-Workspace übernommen
+- `barista.html` für die Veröffentlichung als `index.html` abgelegt
+- Programmlogik nicht nachträglich erweitert
+- dieselbe Fassung zusätzlich unter `docs/barista/` für GitHub Pages bereitgestellt
+- JavaScript-Datei vor der Veröffentlichung mit `node --check` auf Syntaxfehler geprüft
+
+### Barista-Automat – PHP-Stufe
 - V11 als letzte Fassung vor den ausdrücklich gekennzeichneten Musteraufgaben als Grundlage verwendet
 - dreifache Ressourcenanzeige auf eine übersichtliche Tabelle reduziert
 - nicht verwendete Beispielressourcen `suppen` und `salz` aus der veröffentlichten Konfiguration entfernt
@@ -59,7 +66,8 @@ Für eine saubere öffentliche Darstellung wurden folgende Änderungen vorgenomm
 - Entstehungsbeschreibung in den Projekt-READMEs auf den tatsächlich üblichen Unterrichtsablauf vereinheitlicht
 - README-Dateien ergänzt
 - `.gitignore` ergänzt
-- Parkautomat zusätzlich als GitHub-Pages-Demo veröffentlicht
+- Parkautomat als GitHub-Pages-Demo veröffentlicht
+- JavaScript-Barista als zweite GitHub-Pages-Demo ergänzt
 - Portfolioübersicht um sichtbare Python- und Java-Nachweise ergänzt
 - ausdrücklich gekennzeichnete Musterlösungen, Skripte, PDFs, Videos und fremde Beispielressourcen bewusst ausgeschlossen
 

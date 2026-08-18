@@ -2,6 +2,8 @@
 
 Unterrichtsprojekt aus der laufenden FIAE-Umschulung. Die Anwendung simuliert einen einfachen Getränkeautomaten, dessen Zustand über PHP-Sessions verwaltet wird.
 
+Die frühere Browser-Stufe mit HTML, CSS und JavaScript liegt unter [`barista-javascript/`](../barista-javascript/) und ist zusätzlich als Live-Demo verfügbar.
+
 ## Funktionen
 - Maschine aufheizen
 - Getränk auswählen und zubereiten
