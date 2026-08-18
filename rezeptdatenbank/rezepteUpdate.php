@@ -2,6 +2,8 @@
 
 require_once 'dbVerbindung.php';
 
+$rezept = null;
+
 try {
     $id = (int)($_GET['updateID'] ?? 0);
     $sql = "SELECT * FROM rezepte WHERE id = :id";
