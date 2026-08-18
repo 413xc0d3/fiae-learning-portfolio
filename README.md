@@ -35,8 +35,23 @@ Behandelte Themen:
 
 Ordner: [`rezeptdatenbank/`](rezeptdatenbank/)
 
-### 3. Barista-Automat – PHP, Sessions und Zustandslogik
-Unterrichtsprojekt zur Simulation eines Getränkeautomaten mit Zustandsverwaltung über PHP-Sessions.
+### 3. Barista-Automat – HTML, CSS, JavaScript
+Frühe Browser-Stufe der Barista-Unterrichtsreihe mit einfacher Zustandslogik für Aufheizen, Getränkeauswahl und Start.
+
+**Live-Demo:** https://413xc0d3.github.io/fiae-learning-portfolio/barista/
+
+Behandelte Themen:
+- DOM-Selektion und Event-Handling
+- Funktionen und Parameter
+- `while`-Schleife
+- `if` / `else` und `switch`
+- Zustandsvariablen
+- Aktivieren und Deaktivieren von Bedienelementen
+
+Ordner: [`barista-javascript/`](barista-javascript/)
+
+### 4. Barista-Automat – PHP, Sessions und Zustandslogik
+Spätere Unterrichtsstufe des Getränkeautomaten mit Zustandsverwaltung über PHP-Sessions.
 
 Behandelte Themen:
 - Session-basierte Zustandsverwaltung
@@ -49,7 +64,7 @@ Behandelte Themen:
 
 Ordner: [`barista-automat-php/`](barista-automat-php/)
 
-### 4. Struktogramm-Fehleranalyse – Python
+### 5. Struktogramm-Fehleranalyse – Python
 Lernbeispiel zur Simulation und Analyse fehlerhafter Programmlogik bei einer Parkhausbelegung.
 
 Behandelte Themen:
@@ -62,7 +77,7 @@ Behandelte Themen:
 
 Ordner: [`python-struktogramm-debugging/`](python-struktogramm-debugging/)
 
-### 5. Begrüßungsbeispiel – Java, OOP und MVC
+### 6. Begrüßungsbeispiel – Java, OOP und MVC
 Kleine Konsolenanwendung zur grundlegenden Trennung von Verarbeitung, Ein-/Ausgabe und Steuerung nach dem Model-View-Controller-Prinzip.
 
 Behandelte Themen:
