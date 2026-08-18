@@ -31,9 +31,9 @@ Voraussetzung ist eine lokale PHP-Umgebung, zum Beispiel XAMPP oder der eingebau
 Die Datei `logbuch.txt` wird bei Benutzung automatisch erzeugt und ist nicht Bestandteil des Repositories.
 
 ## Entstehung und Einordnung
-Das Projekt wurde im Unterricht über mehrere Entwicklungsstufen schrittweise aufgebaut. Ich habe die Entwicklung der einzelnen Stufen mitvollzogen und Aufgaben dabei teilweise zunächst selbst bearbeitet. Den finalen Stand habe ich anschließend mit dem gemeinsam erarbeiteten beziehungsweise vorgesehenen Unterrichtsstand abgeglichen und korrigiert, damit ich keine fehlerhafte Variante als Lernstand behalte.
+Das Projekt wurde im Unterricht über mehrere Entwicklungsstufen schrittweise aufgebaut. Ich habe die Entwicklung der einzelnen Stufen mitvollzogen und Aufgaben dabei zunächst selbst bearbeitet. Den finalen Stand habe ich anschließend mit dem gemeinsam erarbeiteten Unterrichtsstand abgeglichen und korrigiert, damit ich keine fehlerhafte Variante als Lernstand behalte.
 
-Die hier veröffentlichte Fassung ist deshalb **kein vollständig unabhängig entwickeltes Produktivprojekt**, sondern eine bereinigte Portfolio-Version des Unterrichtsstands.
+Die hier veröffentlichte Fassung ist deshalb **kein vollständig unabhängig entwickeltes Produktivprojekt**, sondern eine von Fehlern beim erstmaligen Erarbeiten befreite Version des Unterrichtsstands.
 
 ## Aufbereitung für das Portfolio
 Für die öffentliche Fassung wurden nur nachvollziehbare Bereinigungen vorgenommen:
