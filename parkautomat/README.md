@@ -21,4 +21,4 @@ Kleine Unterrichtsübung mit HTML, CSS und JavaScript.
 `index.html` direkt im Browser öffnen.
 
 ## Entstehung
-Die Übung wurde im Rahmen des FIAE-Unterrichts schrittweise bearbeitet: teilweise zunächst selbstständig, anschließend mit Anleitung und Referenzlösung im Unterricht.
+Nach einer Einführung in das jeweilige Thema wurden die Aufgaben zunächst selbstständig bearbeitet. Anschließend wurde die Lösung gemeinsam im Unterricht erarbeitet, besprochen und nachvollzogen. Den eigenen Arbeitsstand habe ich danach entsprechend korrigiert und vervollständigt.

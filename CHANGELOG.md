@@ -4,6 +4,8 @@
 
 Die Ausgangsdateien stammen aus Unterrichtsübungen der FIAE-Umschulung.
 
+Der typische Unterrichtsablauf der hier veröffentlichten Beispiele war: Einführung in das Thema, zunächst eigene Bearbeitungszeit, anschließend gemeinsame Erarbeitung und Besprechung der Lösung sowie danach Korrektur und Vervollständigung des eigenen Arbeitsstands.
+
 Für eine saubere öffentliche Darstellung wurden folgende Änderungen vorgenommen:
 
 ### Parkautomat
@@ -40,17 +42,25 @@ Für eine saubere öffentliche Darstellung wurden folgende Änderungen vorgenomm
 - `logbuch.txt` als zur Laufzeit erzeugte Datei in `.gitignore` aufgenommen
 
 ### Python – Struktogramm-Fehleranalyse
-- gemeinsam im Unterricht erarbeitete Python-Simulation als Lernbeispiel aufgenommen
+- Python-Simulation als Lernbeispiel aufgenommen
 - fehlerhafte Ausgangslogik bewusst erhalten, da deren Analyse Inhalt der Aufgabe ist
 - Testfälle auf unterschiedliche Belegungszustände dokumentiert
 - mathematische Herleitung des tatsächlich entstehenden Schaltpunkts von 95 % ergänzt
-- Herkunft und Umfang der eigenen Mitarbeit im README transparent eingeordnet
 
-### Repository
+### Java – MVC-Begrüßungsbeispiel
+- Unterrichtsstand aus `Quellcode/Java/MVCBeispiel` als Grundlage verwendet
+- Model, zwei View-Varianten und Controller gemeinsam aufgenommen
+- Einrückungen und Abstände vereinheitlicht
+- auskommentierte Zwischenstände im Controller entfernt
+- Programmlogik und konkrete Verwendung von `AndereView` nicht nachträglich architektonisch erweitert
+- Quellcode lokal mit `javac` kompiliert und der Konsolenablauf getestet
+
+### Dokumentation und Repository
+- Entstehungsbeschreibung in den Projekt-READMEs auf den tatsächlich üblichen Unterrichtsablauf vereinheitlicht
 - README-Dateien ergänzt
 - `.gitignore` ergänzt
 - Parkautomat zusätzlich als GitHub-Pages-Demo veröffentlicht
-- Portfolioübersicht um einen sichtbaren Python-Nachweis ergänzt
-- Musterlösungen, Skripte, PDFs, Videos und nicht eindeutig eigene Beispielprojekte bewusst ausgeschlossen
+- Portfolioübersicht um sichtbare Python- und Java-Nachweise ergänzt
+- ausdrücklich gekennzeichnete Musterlösungen, Skripte, PDFs, Videos und fremde Beispielressourcen bewusst ausgeschlossen
 
 > Die Bereinigungen dienen der Lesbarkeit und einer sicheren öffentlichen Darstellung. Die grundlegende Anwendungslogik bleibt die im Unterricht erarbeitete Übung.

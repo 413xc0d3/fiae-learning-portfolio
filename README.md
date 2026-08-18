@@ -2,7 +2,9 @@
 
 Dieses Repository dokumentiert meinen aktuellen Lernstand in der laufenden Umschulung zum **Fachinformatiker für Anwendungsentwicklung (FIAE)**.
 
-Die enthaltenen Projekte sind **Unterrichts- und Übungsprojekte**. Je nach Aufgabe wurden Arbeitsschritte selbstständig bearbeitet oder gemeinsam im Unterricht erarbeitet und anschließend nachvollzogen, getestet und bei Bedarf korrigiert. Sie sind deshalb bewusst **nicht als vollständig eigenständig entwickelte Produktivprojekte** dargestellt.
+Die enthaltenen Projekte sind **Unterrichts- und Übungsprojekte**. Der typische Ablauf war dabei: Nach einer Einführung in das jeweilige Thema wurden die Aufgaben zunächst selbstständig bearbeitet. Anschließend wurde die Lösung gemeinsam im Unterricht erarbeitet, besprochen und nachvollzogen. Den eigenen Arbeitsstand habe ich danach entsprechend korrigiert und vervollständigt.
+
+Die Projekte sind deshalb bewusst **nicht als vollständig eigenständig entwickelte Produktivprojekte** dargestellt, sondern als nachvollziehbare Beispiele meines Ausbildungs- und Lernstands.
 
 ## Enthaltene Projekte
 
@@ -48,7 +50,7 @@ Behandelte Themen:
 Ordner: [`barista-automat-php/`](barista-automat-php/)
 
 ### 4. Struktogramm-Fehleranalyse – Python
-Gemeinsam im Unterricht erarbeitetes Lernbeispiel zur Simulation und Analyse fehlerhafter Programmlogik bei einer Parkhausbelegung.
+Lernbeispiel zur Simulation und Analyse fehlerhafter Programmlogik bei einer Parkhausbelegung.
 
 Behandelte Themen:
 - Python-Funktionen und Parameter
@@ -59,6 +61,19 @@ Behandelte Themen:
 - Übertragung eines Struktogramms in ausführbaren Code
 
 Ordner: [`python-struktogramm-debugging/`](python-struktogramm-debugging/)
+
+### 5. Begrüßungsbeispiel – Java, OOP und MVC
+Kleine Konsolenanwendung zur grundlegenden Trennung von Verarbeitung, Ein-/Ausgabe und Steuerung nach dem Model-View-Controller-Prinzip.
+
+Behandelte Themen:
+- Klassen, Objekte und Methoden
+- Konstruktoren und Objektbeziehungen
+- Model, View und Controller
+- Konsoleneingabe mit `Scanner`
+- Methodenparameter und Rückgabewerte
+- zwei View-Varianten aus der Unterrichtsentwicklung
+
+Ordner: [`java-mvc-begruessung/`](java-mvc-begruessung/)
 
 ## Einordnung meines Kenntnisstands
 
@@ -72,8 +87,8 @@ Für die Veröffentlichung wurden ausschließlich kleinere technische Bereinigun
 - lokale Datenbankkonfiguration für eine öffentliche Ablage etwas bereinigt,
 - minimale Ausgabemaskierung ergänzt,
 - Dokumentation und Setup-Hinweise hinzugefügt,
-- experimentelle Unterrichtsreste aus den veröffentlichten Fassungen entfernt.
+- experimentelle beziehungsweise auskommentierte Unterrichtsreste aus den veröffentlichten Fassungen entfernt.
 
 Die zugrunde liegende Anwendungslogik entspricht den im Unterricht erarbeiteten Übungen. Details stehen in [`CHANGELOG.md`](CHANGELOG.md).
 
-> Hinweis: Unterrichtsskripte, Aufgaben-PDFs, Musterlösungen und fremde Beispielressourcen sind bewusst nicht Bestandteil dieses Repositories.
+> Hinweis: Unterrichtsskripte, Aufgaben-PDFs, ausdrücklich gekennzeichnete Musterlösungen und fremde Beispielressourcen sind bewusst nicht Bestandteil dieses Repositories.
