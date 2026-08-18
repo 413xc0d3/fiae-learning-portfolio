@@ -39,10 +39,18 @@ Für eine saubere öffentliche Darstellung wurden folgende Änderungen vorgenomm
 - Darstellung für die Portfolio-Fassung übersichtlicher strukturiert
 - `logbuch.txt` als zur Laufzeit erzeugte Datei in `.gitignore` aufgenommen
 
+### Python – Struktogramm-Fehleranalyse
+- gemeinsam im Unterricht erarbeitete Python-Simulation als Lernbeispiel aufgenommen
+- fehlerhafte Ausgangslogik bewusst erhalten, da deren Analyse Inhalt der Aufgabe ist
+- Testfälle auf unterschiedliche Belegungszustände dokumentiert
+- mathematische Herleitung des tatsächlich entstehenden Schaltpunkts von 95 % ergänzt
+- Herkunft und Umfang der eigenen Mitarbeit im README transparent eingeordnet
+
 ### Repository
 - README-Dateien ergänzt
 - `.gitignore` ergänzt
 - Parkautomat zusätzlich als GitHub-Pages-Demo veröffentlicht
+- Portfolioübersicht um einen sichtbaren Python-Nachweis ergänzt
 - Musterlösungen, Skripte, PDFs, Videos und nicht eindeutig eigene Beispielprojekte bewusst ausgeschlossen
 
 > Die Bereinigungen dienen der Lesbarkeit und einer sicheren öffentlichen Darstellung. Die grundlegende Anwendungslogik bleibt die im Unterricht erarbeitete Übung.
