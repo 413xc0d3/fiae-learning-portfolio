@@ -9,6 +9,8 @@ Die enthaltenen Projekte sind **Unterrichts- und Übungsprojekte**. Einzelne Arb
 ### 1. Parkautomat – HTML, CSS, JavaScript
 Kleine Browser-Anwendung zur Erfassung geparkter Fahrzeuge.
 
+**Live-Demo:** https://413xc0d3.github.io/fiae-learning-portfolio/
+
 Behandelte Themen:
 - DOM-Zugriff und Event-Handling
 - Funktionen und einfache Validierung
