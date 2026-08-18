@@ -2,10 +2,10 @@
 
 Unterrichtsaufgabe zur Übertragung einer vorgegebenen Programmlogik in Python und zur Analyse eines Logikfehlers am Beispiel einer Parkhausbelegung.
 
-## Einordnung
-Die Aufgabe wurde gemeinsam im Unterricht erarbeitet. Ich habe die Umsetzung und insbesondere die Analyse der Programmlogik und des Fehlverhaltens aktiv mitvollzogen.
+## Entstehung und Einordnung
+Nach einer Einführung in das jeweilige Thema wurden die Aufgaben zunächst selbstständig bearbeitet. Anschließend wurde die Lösung gemeinsam im Unterricht erarbeitet, besprochen und nachvollzogen. Den eigenen Arbeitsstand habe ich danach entsprechend korrigiert und vervollständigt.
 
-Sie ist daher **kein vollständig eigenständig entwickeltes Python-Projekt**, sondern ein Lernbeispiel dafür, wie ich Bedingungen, Schleifen, Listen, Funktionen und fehlerhafte Logik nachvollzogen und getestet habe.
+Die Aufgabe ist daher **kein vollständig eigenständig entwickeltes Python-Projekt**, sondern ein Lernbeispiel dafür, wie Bedingungen, Schleifen, Listen, Funktionen und fehlerhafte Logik bearbeitet, nachvollzogen und getestet wurden.
 
 ## Aufgabe
 Ein Parkhaus besitzt 100 Stellplätze. Ein Zähler soll erfassen, wie viele Plätze belegt sind. Ab einem Grenzwert von 90 % soll die Anzeige auf `belegt` wechseln.

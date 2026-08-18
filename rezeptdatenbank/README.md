@@ -26,7 +26,7 @@ Voraussetzung ist eine lokale PHP-/MySQL-Umgebung, zum Beispiel XAMPP.
 4. `rezepteIndex.php` über den lokalen Webserver öffnen.
 
 ## Entstehung
-Die Anwendung wurde als Unterrichtsprojekt schrittweise erarbeitet. Einzelne Aufgaben wurden zunächst selbstständig gelöst und anschließend gemeinsam mit der Dozentin beziehungsweise anhand einer Referenzlösung überprüft.
+Nach einer Einführung in das jeweilige Thema wurden die Aufgaben zunächst selbstständig bearbeitet. Anschließend wurde die Lösung gemeinsam im Unterricht erarbeitet, besprochen und nachvollzogen. Den eigenen Arbeitsstand habe ich danach entsprechend korrigiert und vervollständigt.
 
 ## Nächste mögliche Lernschritte
 - Löschvorgang von `GET` auf `POST` umstellen
