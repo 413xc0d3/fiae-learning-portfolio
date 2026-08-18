@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkautomat P-1000</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Kopfbereich der Webseite -->
+    <header>
+        <h1>Willkommen beim Parkautomat P-1000</h1>
+    </header>
+    <!-- Inhaltsbereich -->
+     <main>
+        <section id="display">
+            <h2>Anzeige</h2>
+            <p id="display-message">Bitte folgen Sie den Anweisungen auf dem Display.</p>
+            <table>
+                <tr>
+                    <th>Tarif</th>
+                    <th class="rechts">Preis</th>
+                </tr>
+                <tr>
+                    <td>Je angefangene Stunde</td>
+                    <td class="rechts">2,50 €</td>
+                </tr>
+                <tr>
+                    <td>Tagesticket (24 Stunden)</td>
+                    <td class="rechts">15,00 €</td>
+                </tr>
+            </table>
+
+            <h3>Geparkte Fahrzeuge:</h3>
+            <!-- Liste am Anfang leer, wir gefüllt wenn Tickets gezogen werden-->
+            <ul id="parked-cars-list">
+                <!-- <li> pro Fahrzeug ein LI .. über JS</li> -->
+            </ul>
+        </section>
+        <section id="controls">
+            <h2>Bedienfeld</h2>
+            <form action="#" method="post">
+                <label for="kennzeichen-input">Kennzeichen:</label>
+                <input type="text" name="kennzeichen" id="kennzeichen-input" placeholder="M-U 123">
+                <button type="submit" id="ticket-button">Parkticket ziehen</button>
+            </form>
+        </section>
+     </main>
+    <footer>
+        &copy; 2025 Parkhaus-Betriebs GmbH
+    </footer>
+    <!-- Fußbereich der Webseite -->
+    <script src="parkautomat.js" defer></script>
+</body>
+</html>
