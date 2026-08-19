@@ -41,7 +41,10 @@
             <h2>Bedienfeld</h2>
             <form action="#" method="post">
                 <label for="kennzeichen-input">Kennzeichen:</label>
-                <input type="text" name="kennzeichen" id="kennzeichen-input" placeholder="M-U 123">
+                <!-- Optionen werden per JS aus der Zugangsliste befüllt -->
+                <select name="kennzeichen" id="kennzeichen-input">
+                    <option value="">-- Kennzeichen wählen --</option>
+                </select>
                 <button type="submit" id="ticket-button">Parkticket ziehen</button>
             </form>
         </section>

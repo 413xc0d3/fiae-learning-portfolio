@@ -69,6 +69,7 @@ function renderAccessList() {
             erlaubteKennzeichen.splice(index, 1);
             showMessage(`Kennzeichen ${kennzeichen} wurde aus der Zugangsliste entfernt`, false);
             renderAccessList();
+            renderKennzeichenOptions();
         });
 
         listItem.textContent = kennzeichen + " ";
@@ -77,12 +78,30 @@ function renderAccessList() {
     });
 }
 
+// Baut das Auswahl-Dropdown im Bedienfeld neu auf, damit es immer nur
+// die aktuell freigegebenen Kennzeichen zur Auswahl anbietet
+function renderKennzeichenOptions() {
+    kennzeichenInput.innerHTML = "";
+
+    const platzhalter = document.createElement("option");
+    platzhalter.value = "";
+    platzhalter.textContent = "-- Kennzeichen wählen --";
+    kennzeichenInput.appendChild(platzhalter);
+
+    erlaubteKennzeichen.forEach(kennzeichen => {
+        const option = document.createElement("option");
+        option.value = kennzeichen;
+        option.textContent = kennzeichen;
+        kennzeichenInput.appendChild(option);
+    });
+}
+
 // Baut den Erfolgstext für ein neu ausgestelltes Ticket
 function createSuccessMessage(kennzeichen) {
     return `Ticket für das Fahrzeug ${kennzeichen} wurde erstellt`;
 }
 
-// Klick auf "Parkticket ziehen": validiert die Eingabe, prüft die
+// Klick auf "Parkticket ziehen": validiert die Auswahl, prüft die
 // Zugangsliste und legt bei Erfolg ein neues Fahrzeug im Array an
 function handleTicketButtonClick(event) {
     event.preventDefault();
@@ -90,7 +109,7 @@ function handleTicketButtonClick(event) {
     const aktuellesKennzeichen = kennzeichenInput.value.trim();
 
     if (aktuellesKennzeichen === "") {
-        showMessage("Fehler: Kein Kennzeichen", true);
+        showMessage("Fehler: Kein Kennzeichen ausgewählt", true);
         return;
     }
 
@@ -131,6 +150,7 @@ function handleAccessFormSubmit(event) {
     erlaubteKennzeichen.push(neuesKennzeichen);
     showMessage(`Kennzeichen ${neuesKennzeichen} wurde freigegeben`, false);
     renderAccessList();
+    renderKennzeichenOptions();
     accessInput.value = "";
 }
 
@@ -139,5 +159,6 @@ function handleAccessFormSubmit(event) {
 ticketButton.addEventListener("click", handleTicketButtonClick);
 accessForm.addEventListener("submit", handleAccessFormSubmit);
 
-// Zugangsliste beim Laden der Seite direkt anzeigen
+// Zugangsliste und Auswahl-Dropdown beim Laden der Seite direkt anzeigen
 renderAccessList();
+renderKennzeichenOptions();

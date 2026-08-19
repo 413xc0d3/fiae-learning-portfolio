@@ -10,12 +10,14 @@ Reale Parkhäuser lassen oft nicht jedes Fahrzeug einfahren (z. B. Firmenparkpl�
 - Kennzeichen können über ein eigenes Formular zur Liste hinzugefügt werden
 - jedes freigegebene Kennzeichen lässt sich über einen Button wieder entfernen
 - der Vergleich ignoriert Groß-/Kleinschreibung und überflüssige Leerzeichen
+- im Bedienfeld wird das Kennzeichen statt per Freitext über ein Dropdown ausgewählt, das immer nur die aktuell freigegebenen Kennzeichen anbietet
 
 ### Umgesetzte Konzepte
 - `Array.prototype.some()` für die Zugangsprüfung
 - Normalisierung von Nutzereingaben vor dem Vergleich (`trim`, `toUpperCase`, Leerzeichen vereinheitlichen)
 - ein zweites, unabhängiges Formular mit eigenem `submit`-Handler
 - dynamisches Rendern einer zweiten Liste (Zugangsliste) analog zur Fahrzeugliste
+- dynamisches Befüllen eines `<select>`-Elements mit `createElement("option")`, das bei jeder Änderung der Zugangsliste neu aufgebaut wird
 
 ## Start
 `index.html` direkt im Browser öffnen.
