@@ -16,8 +16,14 @@ const geparkteAutos = [];
 const maxKapazitaet = 10;
 
 // Zugangsliste: nur Kennzeichen aus diesem Array dürfen einparken.
-// Ein paar Beispieleinträge als Startbestand.
-const erlaubteKennzeichen = ["M-AB 123", "B-XY 456"];
+// 20 Beispieleinträge als Startbestand, damit die Kapazitätsanzeige
+// (maxKapazitaet = 10) auch tatsächlich an ihre Grenze kommen kann.
+const erlaubteKennzeichen = [
+    "M-AB 123", "B-XY 456", "K-CD 789", "F-EF 234", "HH-GH 567",
+    "S-IJ 890", "D-KL 111", "L-MN 222", "N-OP 333", "DO-QR 444",
+    "E-ST 555", "DD-UV 666", "HB-WX 777", "H-YZ 888", "WI-AA 999",
+    "AC-BB 101", "MZ-CC 202", "KA-DD 303", "FR-EE 404", "RE-FF 505"
+];
 
 // Zeigt eine Statusmeldung an (gelb = normal, rot = Fehler)
 function showMessage(text, isError) {
@@ -42,8 +48,9 @@ function istZugangErlaubt(kennzeichen) {
 function renderParkedCars() {
     parkedCarsListContainer.innerHTML = "";
 
-    // Belegungsanzeige: aktuelle Anzahl vs. maximale Kapazität
-    kapazitaetAnzeige.textContent = `Belegt: ${geparkteAutos.length} von ${maxKapazitaet} Plätzen`;
+    // Belegungsanzeige: zeigt immer die aktuell noch freien Plätze
+    const freiePlaetze = maxKapazitaet - geparkteAutos.length;
+    kapazitaetAnzeige.textContent = `Freie Plätze: ${freiePlaetze} von ${maxKapazitaet}`;
 
     geparkteAutos.forEach((fahrzeug, index) => {
         const listItem = document.createElement("li");

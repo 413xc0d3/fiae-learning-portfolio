@@ -11,6 +11,7 @@ Reale Parkhäuser lassen oft nicht jedes Fahrzeug einfahren (z. B. Firmenparkpl�
 - jedes freigegebene Kennzeichen lässt sich über einen Button wieder entfernen
 - der Vergleich ignoriert Groß-/Kleinschreibung und überflüssige Leerzeichen
 - im Bedienfeld wird das Kennzeichen statt per Freitext über ein Dropdown ausgewählt, das immer nur die aktuell freigegebenen Kennzeichen anbietet
+- Startbestand von 20 freigegebenen Kennzeichen, damit sich die Kapazitätsgrenze (10 Plätze) sinnvoll ausprobieren lässt
 
 ### Umgesetzte Konzepte
 - `Array.prototype.some()` für die Zugangsprüfung
@@ -33,13 +34,13 @@ Bisher wurde ein Fahrzeug beim Klick auf "Ausparken" sofort entfernt, ohne dass 
 
 ## Neue Funktion: Kapazitätsgrenze
 
-Ein reales Parkhaus hat nur begrenzt Stellplätze. Deshalb gibt es jetzt eine maximale Kapazität (`maxKapazitaet`, aktuell 10): Ist sie erreicht, wird beim Einparken "Parkhaus voll" gemeldet statt ein weiteres Ticket auszustellen. Die aktuelle Belegung ("Belegt: X von 10 Plätzen") wird oberhalb der Fahrzeugliste angezeigt.
+Ein reales Parkhaus hat nur begrenzt Stellplätze. Deshalb gibt es jetzt eine maximale Kapazität (`maxKapazitaet`, aktuell 10): Ist sie erreicht, wird beim Einparken "Parkhaus voll" gemeldet statt ein weiteres Ticket auszustellen. Oberhalb der Fahrzeugliste werden immer die aktuell noch freien Plätze angezeigt ("Freie Plätze: X von 10").
 
 Die Prüfung folgt demselben Muster wie die Ressourcenprüfung vor dem Brühen in [`barista-javascript/barista.js`](../barista-javascript/barista.js) (`bruehen()`): erst prüfen, ob genug "Kapazität" vorhanden ist, erst dann die eigentliche Aktion ausführen.
 
 ### Umgesetzte Konzepte
 - Grenzwertprüfung mit `Array.length` gegen eine Konstante, analog zur Ressourcenprüfung im Barista-Projekt
-- Ableiten einer Statusanzeige direkt aus dem Datenbestand (`geparkteAutos.length`)
+- Ableiten einer Statusanzeige direkt aus dem Datenbestand (`maxKapazitaet - geparkteAutos.length`)
 
 ## Start
 `index.html` direkt im Browser öffnen.
