@@ -19,6 +19,18 @@ Reale Parkhäuser lassen oft nicht jedes Fahrzeug einfahren (z. B. Firmenparkpl�
 - dynamisches Rendern einer zweiten Liste (Zugangsliste) analog zur Fahrzeugliste
 - dynamisches Befüllen eines `<select>`-Elements mit `createElement("option")`, das bei jeder Änderung der Zugangsliste neu aufgebaut wird
 
+## Neue Funktion: Bezahlung vor dem Ausparken
+
+Bisher wurde ein Fahrzeug beim Klick auf "Ausparken" sofort entfernt, ohne dass eine Gebühr anfiel. Jetzt läuft das zweistufig:
+
+1. Klick auf "Ausparken" berechnet Parkdauer und Gebühr (2,50 € je angefangene Stunde, gedeckelt auf 15 €) und zeigt sie an
+2. erst der danach eingeblendete Button "Bezahlen und ausparken" entfernt das Fahrzeug tatsächlich aus der Liste
+
+### Umgesetzte Konzepte
+- Datumsdifferenz berechnen (`new Date() - fahrzeug.einfahrt`)
+- zweistufiger Bestätigungsablauf über zwei Buttons, von denen einer zunächst versteckt ist (`hidden`)
+- `Math.ceil` für angefangene Stunden, `Math.min` für den Gebührendeckel
+
 ## Start
 `index.html` direkt im Browser öffnen.
 
