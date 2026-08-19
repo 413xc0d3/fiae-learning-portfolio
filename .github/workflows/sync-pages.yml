@@ -1,0 +1,44 @@
+name: Sync GitHub Pages demos
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "parkautomat/**"
+      - "barista-javascript/**"
+      - ".github/workflows/sync-pages.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sync live demo files
+        run: |
+          cp parkautomat/index.html docs/index.html
+          cp parkautomat/styles.css docs/styles.css
+          cp parkautomat/parkautomat.js docs/parkautomat.js
+
+          mkdir -p docs/barista
+          cp barista-javascript/index.html docs/barista/index.html
+          cp barista-javascript/barista.css docs/barista/barista.css
+          cp barista-javascript/barista.js docs/barista/barista.js
+
+      - name: Commit synchronized demo files
+        run: |
+          if git diff --quiet -- docs; then
+            echo "Live demos are already synchronized."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "chore: sync GitHub Pages demos"
+          git push
