@@ -3,6 +3,7 @@ const kennzeichenInput = document.getElementById("kennzeichen-input");
 const ticketButton = document.getElementById("ticket-button");
 const displayMessage = document.getElementById("display-message");
 const parkedCarsListContainer = document.getElementById("parked-cars-list");
+const kapazitaetAnzeige = document.getElementById("kapazitaet-anzeige");
 
 const accessForm = document.getElementById("access-form");
 const accessInput = document.getElementById("access-input");
@@ -10,6 +11,9 @@ const accessListContainer = document.getElementById("access-list");
 
 // Zentraler Datenspeicher: jedes Element ist {kennzeichen, einfahrt}
 const geparkteAutos = [];
+
+// Maximale Anzahl gleichzeitig geparkter Fahrzeuge
+const maxKapazitaet = 10;
 
 // Zugangsliste: nur Kennzeichen aus diesem Array dürfen einparken.
 // Ein paar Beispieleinträge als Startbestand.
@@ -37,6 +41,9 @@ function istZugangErlaubt(kennzeichen) {
 // (wird nach jedem Einparken/Ausparken erneut aufgerufen)
 function renderParkedCars() {
     parkedCarsListContainer.innerHTML = "";
+
+    // Belegungsanzeige: aktuelle Anzahl vs. maximale Kapazität
+    kapazitaetAnzeige.textContent = `Belegt: ${geparkteAutos.length} von ${maxKapazitaet} Plätzen`;
 
     geparkteAutos.forEach((fahrzeug, index) => {
         const listItem = document.createElement("li");
@@ -143,6 +150,12 @@ function handleTicketButtonClick(event) {
         return;
     }
 
+    // Kapazitätsgrenze: analog zur Ressourcenprüfung in barista.js (bruehen())
+    if (geparkteAutos.length >= maxKapazitaet) {
+        showMessage("Parkhaus voll: Bitte später erneut versuchen", true);
+        return;
+    }
+
     showMessage(createSuccessMessage(aktuellesKennzeichen), false);
 
     const neuesFahrzeug = {
@@ -183,6 +196,7 @@ function handleAccessFormSubmit(event) {
 ticketButton.addEventListener("click", handleTicketButtonClick);
 accessForm.addEventListener("submit", handleAccessFormSubmit);
 
-// Zugangsliste und Auswahl-Dropdown beim Laden der Seite direkt anzeigen
+// Zugangsliste, Auswahl-Dropdown und Belegungsanzeige beim Laden der Seite direkt anzeigen
 renderAccessList();
 renderKennzeichenOptions();
+renderParkedCars();

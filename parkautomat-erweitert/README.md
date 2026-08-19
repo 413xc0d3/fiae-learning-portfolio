@@ -31,6 +31,16 @@ Bisher wurde ein Fahrzeug beim Klick auf "Ausparken" sofort entfernt, ohne dass 
 - zweistufiger Bestätigungsablauf über zwei Buttons, von denen einer zunächst versteckt ist (`hidden`)
 - `Math.ceil` für angefangene Stunden, `Math.min` für den Gebührendeckel
 
+## Neue Funktion: Kapazitätsgrenze
+
+Ein reales Parkhaus hat nur begrenzt Stellplätze. Deshalb gibt es jetzt eine maximale Kapazität (`maxKapazitaet`, aktuell 10): Ist sie erreicht, wird beim Einparken "Parkhaus voll" gemeldet statt ein weiteres Ticket auszustellen. Die aktuelle Belegung ("Belegt: X von 10 Plätzen") wird oberhalb der Fahrzeugliste angezeigt.
+
+Die Prüfung folgt demselben Muster wie die Ressourcenprüfung vor dem Brühen in [`barista-javascript/barista.js`](../barista-javascript/barista.js) (`bruehen()`): erst prüfen, ob genug "Kapazität" vorhanden ist, erst dann die eigentliche Aktion ausführen.
+
+### Umgesetzte Konzepte
+- Grenzwertprüfung mit `Array.length` gegen eine Konstante, analog zur Ressourcenprüfung im Barista-Projekt
+- Ableiten einer Statusanzeige direkt aus dem Datenbestand (`geparkteAutos.length`)
+
 ## Start
 `index.html` direkt im Browser öffnen.
 
