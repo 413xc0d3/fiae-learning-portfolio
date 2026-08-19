@@ -6,12 +6,16 @@ Die enthaltenen Projekte sind **Unterrichts- und Übungsprojekte**. Der typische
 
 Die Projekte sind deshalb bewusst **nicht als vollständig eigenständig entwickelte Produktivprojekte** dargestellt, sondern als nachvollziehbare Beispiele meines Ausbildungs- und Lernstands.
 
+Bei einzelnen Projekten wurden darüber hinaus klar gekennzeichnete, exemplarische Erweiterungen in Eigenleistung umgesetzt. Sie bauen auf den im Unterricht behandelten Grundlagen auf und zeigen, wie ich die dort erarbeiteten Konzepte selbstständig weitergeführt habe.
+
 ## Enthaltene Projekte
 
 ### 1. Parkautomat – HTML, CSS, JavaScript
 Kleine Browser-Anwendung zur Erfassung geparkter Fahrzeuge.
 
 **Live-Demo:** https://413xc0d3.github.io/fiae-learning-portfolio/
+
+**Eigenständige Erweiterung:** Aufbauend auf der Unterrichtsversion wurde exemplarisch eine Ausparkfunktion ergänzt. Geparkte Fahrzeuge können dadurch gezielt aus der Liste entfernt werden; anschließend wird die Fahrzeugliste neu aufgebaut und das ausgeparkte Kennzeichen bestätigt.
 
 Behandelte Themen:
 - DOM-Zugriff und Event-Handling
@@ -39,6 +43,8 @@ Ordner: [`rezeptdatenbank/`](rezeptdatenbank/)
 Frühe Browser-Stufe der Barista-Unterrichtsreihe mit einfacher Zustandslogik für Aufheizen, Getränkeauswahl und Start.
 
 **Live-Demo:** https://413xc0d3.github.io/fiae-learning-portfolio/barista/
+
+**Eigenständige Erweiterung:** Aufbauend auf der Unterrichtsversion wurde exemplarisch eine Ressourcenverwaltung ergänzt. Wasser, Kaffee und Milch werden als begrenzte Vorräte geführt, vor der Zubereitung geprüft und bei erfolgreicher Ausgabe entsprechend reduziert.
 
 Behandelte Themen:
 - DOM-Selektion und Event-Handling
@@ -119,6 +125,6 @@ Für die Veröffentlichung wurden ausschließlich kleinere technische Bereinigun
 - Dokumentation und Setup-Hinweise hinzugefügt,
 - experimentelle beziehungsweise auskommentierte Unterrichtsreste aus den veröffentlichten Fassungen entfernt.
 
-Die zugrunde liegende Anwendungslogik entspricht den im Unterricht erarbeiteten Übungen. Details stehen in [`CHANGELOG.md`](CHANGELOG.md).
+Die zugrunde liegende Anwendungslogik entspricht überwiegend den im Unterricht erarbeiteten Übungen. Darüber hinausgehende Eigenleistungen werden bei den jeweiligen Projekten ausdrücklich als eigenständige Erweiterungen gekennzeichnet. Details stehen in [`CHANGELOG.md`](CHANGELOG.md).
 
 > Hinweis: Unterrichtsskripte, Aufgaben-PDFs, ausdrücklich gekennzeichnete Musterlösungen und fremde Beispielressourcen sind bewusst nicht Bestandteil dieses Repositories.
