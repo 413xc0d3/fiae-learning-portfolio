@@ -13,9 +13,17 @@ function showMessage(text, isError) {
 function renderParkedCars() {
     parkedCarsListContainer.innerHTML = "";
 
-    geparkteAutos.forEach((fahrzeug) => {
+    geparkteAutos.forEach((fahrzeug, index) => {
         const listItem = document.createElement("li");
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Ausparken";
+        deleteButton.addEventListener("click", () => {
+            geparkteAutos.splice(index, 1);
+            showMessage(`Fahrzeug ${fahrzeug.kennzeichen} wurde ausgeparkt!`, false);
+            renderParkedCars();
+        });
         listItem.textContent = `${fahrzeug.kennzeichen} seit ${fahrzeug.einfahrt.toLocaleString()}`;
+        listItem.appendChild(deleteButton);
         parkedCarsListContainer.appendChild(listItem);
     });
 }
