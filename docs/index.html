@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Kopfbereich der Webseite -->
     <header>
         <h1>Willkommen beim Parkautomat P-1000</h1>
     </header>
-    <main>
+    <!-- Inhaltsbereich -->
+     <main>
         <section id="display">
             <h2>Anzeige</h2>
             <p id="display-message">Bitte folgen Sie den Anweisungen auf dem Display.</p>
@@ -30,7 +32,10 @@
             </table>
 
             <h3>Geparkte Fahrzeuge:</h3>
-            <ul id="parked-cars-list"></ul>
+            <!-- Liste am Anfang leer, wir gefüllt wenn Tickets gezogen werden-->
+            <ul id="parked-cars-list">
+                <!-- <li> pro Fahrzeug ein LI .. über JS</li> -->
+            </ul>
         </section>
         <section id="controls">
             <h2>Bedienfeld</h2>
@@ -40,10 +45,11 @@
                 <button type="submit" id="ticket-button">Parkticket ziehen</button>
             </form>
         </section>
-    </main>
+     </main>
     <footer>
         &copy; 2025 Parkhaus-Betriebs GmbH
     </footer>
+    <!-- Fußbereich der Webseite -->
     <script src="parkautomat.js" defer></script>
 </body>
 </html>

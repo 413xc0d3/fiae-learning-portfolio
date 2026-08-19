@@ -8,21 +8,30 @@ body{
     font-family: sans-serif;
 }
 
+header{
+   /* background-color: red; */
+}
+
 main{
     margin: 30px auto;
     display: flex;
     gap: 30px;
     max-width: 900px;
+   
 }
 
+/* Tagselektor */
 section{
     border: 1px solid #ffffff;
+    /* Innenabstand */
     padding: 10px;
+    /* Aussenabstand */
     margin: 10px;
 }
 
 h1{
     color: #F1C40F;
+    /* left, center, right, justify (Blocksatz) */
     text-align: center;
 }
 
@@ -44,13 +53,15 @@ th, td{
     text-align: right;
 }
 
+/* Gruppenselektor */
 #display, #controls{
     border-radius: 15px;
     flex: 1;
 }
 
+/* ID-Selektor*/
 #display{
-    background-color: #2C3E50;
+    background-color: #2C3E50;;
 }
 
 #controls{
@@ -64,6 +75,7 @@ th, td{
     padding: 15px;
     border-radius: 10px;
     border: none;
+ 
 }
 
 #controls button:hover{
@@ -80,11 +92,18 @@ th, td{
 }
 
 #controls input[type="text"]:focus{
-    border: 5px solid #27ae60;
+    /* background-color: blue; */
+    border:5px solid #27ae60;
 }
+
+/* #controls input[type="text"]:hover{
+    border:5px solid red;
+} */
+
 
 @media(max-width: 768px){
     main{
         flex-direction: column;
+        /* background-color: #F1C40F; */
     }
 }
