@@ -24,3 +24,6 @@ logbuch.txt
 *.sqlite
 *.sqlite3
 *.db
+
+# Private, non-shared instructions (used locally by Claude Code, not for GitHub)
+python-datenabgleich/CLAUDE.md
