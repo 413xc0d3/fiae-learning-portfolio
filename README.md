@@ -46,6 +46,8 @@ Fr체he Browser-Stufe der Barista-Unterrichtsreihe mit einfacher Zustandslogik f�
 
 **Eigenst채ndige Erweiterung:** Aufbauend auf der Unterrichtsversion wurde exemplarisch eine Ressourcenverwaltung erg채nzt. Wasser, Kaffee und Milch werden als begrenzte Vorr채te gef체hrt, vor der Zubereitung gepr체ft und bei erfolgreicher Ausgabe entsprechend reduziert.
 
+**Weiterf체hrung:** Diese Unterrichtsreihe habe ich sp채ter in einem eigenen Repository deutlich weiter ausgebaut, mit React/TypeScript und als Showcase f체r strukturierte Zusammenarbeit mit KI: [`kaffee-in-production`](https://github.com/413xc0d3/kaffee-in-production).
+
 Behandelte Themen:
 - DOM-Selektion und Event-Handling
 - Funktionen und Parameter
