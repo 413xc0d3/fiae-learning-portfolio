@@ -1,0 +1,1 @@
+Beispielinhalt: Dokument ohne erkennbaren Objektbezug im Dateinamen.

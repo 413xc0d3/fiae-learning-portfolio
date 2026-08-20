@@ -1,0 +1,3 @@
+OBJ001;Musterstraße 1, 55583 Bad Kreuznach
+OBJ002;Beispielweg 5, 55118 Mainz
+OBJ003;Testallee 9, 67663 Kaiserslautern
