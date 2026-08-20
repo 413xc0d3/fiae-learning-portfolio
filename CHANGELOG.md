@@ -1,5 +1,11 @@
 # Änderungsnotizen zur GitHub-Aufbereitung
 
+## 2026-08-20
+
+### Python – Dokumentzuordnung für Verwaltungsobjekte
+- Eigenständig entwickeltes Skript war bereits im Repository vorhanden (PR #2), aber nicht in der Portfolioübersicht dokumentiert
+- Portfolioübersicht um diesen Eintrag ergänzt, direkt im Anschluss an die Unterrichts-Python-Beispiele platziert
+
 ## 2026-08-18
 
 Die Ausgangsdateien stammen aus Unterrichtsübungen der FIAE-Umschulung.

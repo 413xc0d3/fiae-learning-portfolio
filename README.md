@@ -100,7 +100,20 @@ Ordner: [`python-grundlagen/`](python-grundlagen/)
 
 > Einordnung: Die Beispiele wurden gemeinsam im Unterricht anhand der zugehörigen Aufgabenstellungen erarbeitet. Sie dokumentieren den behandelten Lernstand und werden nicht als vollständig eigenständig entwickelte Anwendungen dargestellt.
 
-### 7. Begrüßungsbeispiel – Java, OOP und MVC
+### 7. Python – Dokumentzuordnung für Verwaltungsobjekte
+Skript zur automatischen Zuordnung unsortierter Dokumente zu Verwaltungsobjekten anhand des Dateinamens, basierend auf einer realen Aufgabenstellung aus meiner früheren Tätigkeit in der Dokumentendigitalisierung (alle Beispieldaten frei erfunden).
+
+**Eigenständig entwickelt:** Anders als die übrigen Projekte in diesem Repository ist dieses Skript keine Unterrichtsaufgabe, sondern eine eigene Idee, aufbauend auf den Grundlagen aus [`python-grundlagen`](python-grundlagen/). Geschrieben habe ich den Code selbst, Claude fungierte als Tutor: Konzepte erklärt, Rückfragen beantwortet, auf typische Anfängerfehler hingewiesen.
+
+Behandelte Themen:
+- Dateiverarbeitung und Dictionaries
+- Suchlogik in Dateinamen
+- Gruppierung von Treffern je Objekt
+- Umgang mit nicht zuordenbaren Einträgen
+
+Ordner: [`python-dokumentzuordnung/`](python-dokumentzuordnung/)
+
+### 8. Begrüßungsbeispiel – Java, OOP und MVC
 Kleine Konsolenanwendung zur grundlegenden Trennung von Verarbeitung, Ein-/Ausgabe und Steuerung nach dem Model-View-Controller-Prinzip.
 
 Behandelte Themen:
