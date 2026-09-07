@@ -113,7 +113,19 @@ Behandelte Themen:
 
 Ordner: [`python-dokumentzuordnung/`](python-dokumentzuordnung/)
 
-### 8. Begrüßungsbeispiel – Java, OOP und MVC
+### 8. Python – Datenabgleich zwischen zwei Systemen
+Kleine Übung zum Vergleich zweier Datenbestände (z. B. IDs aus zwei Systemen), als Grundlage für die Prüfung der Datenqualität zwischen zwei Datenquellen.
+
+**Eigenständige Erweiterung:** Aufbauend auf der Basisübung (Auffinden von Abweichungen per Mengendifferenz) wurde exemplarisch eine Schnittmengen-Funktion ergänzt, die die in beiden Systemen übereinstimmenden IDs ermittelt.
+
+Behandelte Themen:
+- Mengen (`set`) und Mengen-Operationen (Differenz, Schnittmenge)
+- Funktionen mit Rückgabewerten und Tupel-Entpacken
+- Grundlage für Datenqualitätsprüfungen zwischen zwei Datenquellen
+
+Ordner: [`python-datenabgleich/`](python-datenabgleich/)
+
+### 9. Begrüßungsbeispiel – Java, OOP und MVC
 Kleine Konsolenanwendung zur grundlegenden Trennung von Verarbeitung, Ein-/Ausgabe und Steuerung nach dem Model-View-Controller-Prinzip.
 
 Behandelte Themen:
