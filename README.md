@@ -46,6 +46,8 @@ Frühe Browser-Stufe der Barista-Unterrichtsreihe mit einfacher Zustandslogik f�
 
 **Eigenständige Erweiterung:** Aufbauend auf der Unterrichtsversion wurde exemplarisch eine Ressourcenverwaltung ergänzt. Wasser, Kaffee und Milch werden als begrenzte Vorräte geführt, vor der Zubereitung geprüft und bei erfolgreicher Ausgabe entsprechend reduziert.
 
+**Weiterführung:** Diese Unterrichtsreihe habe ich später in einem eigenen Repository deutlich weiter ausgebaut, mit React/TypeScript und als Showcase für strukturierte Zusammenarbeit mit KI: [`kaffee-in-production`](https://github.com/413xc0d3/kaffee-in-production).
+
 Behandelte Themen:
 - DOM-Selektion und Event-Handling
 - Funktionen und Parameter
@@ -98,7 +100,20 @@ Ordner: [`python-grundlagen/`](python-grundlagen/)
 
 > Einordnung: Die Beispiele wurden gemeinsam im Unterricht anhand der zugehörigen Aufgabenstellungen erarbeitet. Sie dokumentieren den behandelten Lernstand und werden nicht als vollständig eigenständig entwickelte Anwendungen dargestellt.
 
-### 7. Python – Datenabgleich zwischen zwei Systemen
+### 7. Python – Dokumentzuordnung für Verwaltungsobjekte
+Skript zur automatischen Zuordnung unsortierter Dokumente zu Verwaltungsobjekten anhand des Dateinamens, basierend auf einer realen Aufgabenstellung aus meiner früheren Tätigkeit in der Dokumentendigitalisierung (alle Beispieldaten frei erfunden).
+
+**Eigenständig entwickelt:** Anders als die übrigen Projekte in diesem Repository ist dieses Skript keine Unterrichtsaufgabe, sondern eine eigene Idee, aufbauend auf den Grundlagen aus [`python-grundlagen`](python-grundlagen/). Geschrieben habe ich den Code selbst, Claude fungierte als Tutor: Konzepte erklärt, Rückfragen beantwortet, auf typische Anfängerfehler hingewiesen.
+
+Behandelte Themen:
+- Dateiverarbeitung und Dictionaries
+- Suchlogik in Dateinamen
+- Gruppierung von Treffern je Objekt
+- Umgang mit nicht zuordenbaren Einträgen
+
+Ordner: [`python-dokumentzuordnung/`](python-dokumentzuordnung/)
+
+### 8. Python – Datenabgleich zwischen zwei Systemen
 Kleine Übung zum Vergleich zweier Datenbestände (z. B. IDs aus zwei Systemen), als Grundlage für die Prüfung der Datenqualität zwischen zwei Datenquellen.
 
 **Eigenständige Erweiterung:** Aufbauend auf der Basisübung (Auffinden von Abweichungen per Mengendifferenz) wurde exemplarisch eine Schnittmengen-Funktion ergänzt, die die in beiden Systemen übereinstimmenden IDs ermittelt.
@@ -110,7 +125,7 @@ Behandelte Themen:
 
 Ordner: [`python-datenabgleich/`](python-datenabgleich/)
 
-### 8. Begrüßungsbeispiel – Java, OOP und MVC
+### 9. Begrüßungsbeispiel – Java, OOP und MVC
 Kleine Konsolenanwendung zur grundlegenden Trennung von Verarbeitung, Ein-/Ausgabe und Steuerung nach dem Model-View-Controller-Prinzip.
 
 Behandelte Themen:
