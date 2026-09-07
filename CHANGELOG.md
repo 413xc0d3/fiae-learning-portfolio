@@ -1,9 +1,29 @@
 # Änderungsnotizen zur GitHub-Aufbereitung
 
+## 2026-09-08
+
+Drei lokal fertiggestellte, aber nie veröffentlichte Feature-Branches nachträglich übernommen.
+
+Die Pull-Request-Nummerierung beginnt mit diesem Eintrag neu bei #1; ältere Verweise auf frühere Nummern wurden deshalb entfernt.
+
+### Parkautomat
+- Bezahlbestätigung vor dem Ausparken ergänzt (PR #1): Parkdauer und Gebühr werden berechnet und angezeigt, erst ein zweiter Button parkt das Fahrzeug tatsächlich aus
+- Kommentare zu den Funktionsbereichen in `parkautomat.js` ergänzt
+- Projekt-README und Portfolioeintrag um diesen Schritt erweitert
+
+### Parkautomat – erweiterte Fassung
+- neuer Ordner `parkautomat-erweitert/` mit Zugangskontrolle, Kapazitätsgrenze und Bezahlablauf (PR #2)
+- als eigener Punkt 2 in die Portfolioübersicht aufgenommen, direkt im Anschluss an das Unterrichtsprojekt
+- Live-Demo in den Pages-Workflow aufgenommen
+
+### Python – Datenabgleich zwischen zwei Systemen
+- neuer Ordner `python-datenabgleich/` mit Mengendifferenz und eigenständig ergänzter Schnittmengen-Funktion (PR #3)
+- als Punkt 9 in die Portfolioübersicht aufgenommen
+
 ## 2026-08-20
 
 ### Python – Dokumentzuordnung für Verwaltungsobjekte
-- Eigenständig entwickeltes Skript war bereits im Repository vorhanden (PR #2), aber nicht in der Portfolioübersicht dokumentiert
+- Eigenständig entwickeltes Skript war bereits im Repository vorhanden, aber nicht in der Portfolioübersicht dokumentiert
 - Portfolioübersicht um diesen Eintrag ergänzt, direkt im Anschluss an die Unterrichts-Python-Beispiele platziert
 
 ## 2026-08-18

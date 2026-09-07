@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "parkautomat/**"
+      - "parkautomat-erweitert/**"
       - "barista-javascript/**"
       - ".github/workflows/sync-pages.yml"
 
@@ -24,6 +25,11 @@ jobs:
           cp parkautomat/index.html docs/index.html
           cp parkautomat/styles.css docs/styles.css
           cp parkautomat/parkautomat.js docs/parkautomat.js
+
+          mkdir -p docs/parkautomat-erweitert
+          cp parkautomat-erweitert/index.html docs/parkautomat-erweitert/index.html
+          cp parkautomat-erweitert/styles.css docs/parkautomat-erweitert/styles.css
+          cp parkautomat-erweitert/parkautomat.js docs/parkautomat-erweitert/parkautomat.js
 
           mkdir -p docs/barista
           cp barista-javascript/index.html docs/barista/index.html

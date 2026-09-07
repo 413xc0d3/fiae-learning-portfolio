@@ -15,7 +15,7 @@ Kleine Browser-Anwendung zur Erfassung geparkter Fahrzeuge.
 
 **Live-Demo:** https://413xc0d3.github.io/fiae-learning-portfolio/
 
-**Eigenständige Erweiterung:** Aufbauend auf der Unterrichtsversion wurde exemplarisch eine Ausparkfunktion ergänzt. Geparkte Fahrzeuge können dadurch gezielt aus der Liste entfernt werden; anschließend wird die Fahrzeugliste neu aufgebaut und das ausgeparkte Kennzeichen bestätigt.
+**Eigenständige Erweiterung:** Aufbauend auf der Unterrichtsversion wurde exemplarisch eine Ausparkfunktion ergänzt. Geparkte Fahrzeuge können dadurch gezielt aus der Liste entfernt werden; anschließend wird die Fahrzeugliste neu aufgebaut und das ausgeparkte Kennzeichen bestätigt. In einem zweiten Schritt wurde daraus ein zweistufiger Ablauf: Der Auspark-Button berechnet zunächst Parkdauer und Gebühr, erst die anschließende Bezahlbestätigung entfernt das Fahrzeug.
 
 Behandelte Themen:
 - DOM-Zugriff und Event-Handling
@@ -26,7 +26,24 @@ Behandelte Themen:
 
 Ordner: [`parkautomat/`](parkautomat/)
 
-### 2. Rezeptdatenbank – PHP, PDO, SQL
+### 2. Parkautomat – erweiterte Fassung
+Eigenständige Weiterentwicklung des Unterrichtsprojekts, losgelöst vom ursprünglichen Unterrichtsstand.
+
+**Live-Demo:** https://413xc0d3.github.io/fiae-learning-portfolio/parkautomat-erweitert/
+
+**Eigenständig entwickelt:** Alle Funktionen in diesem Ordner gehen über die Unterrichtsaufgabe hinaus. Eine Zugangsliste gibt nur hinterlegte Kennzeichen zur Einfahrt frei und speist ein Dropdown im Bedienfeld, eine Kapazitätsgrenze meldet ein volles Parkhaus und zeigt die freien Plätze an, und das Ausparken läuft über Gebührenberechnung mit anschließender Bezahlbestätigung.
+
+Behandelte Themen:
+- Zugangsprüfung mit `Array.prototype.some()`
+- Normalisierung von Nutzereingaben vor dem Vergleich
+- zweites Formular mit eigenem `submit`-Handler
+- dynamisch befülltes `<select>`-Element
+- Grenzwertprüfung gegen eine Konstante, analog zur Ressourcenprüfung im Barista-Projekt
+- Zeitdifferenz- und Gebührenberechnung mit `Math.ceil` und `Math.min`
+
+Ordner: [`parkautomat-erweitert/`](parkautomat-erweitert/)
+
+### 3. Rezeptdatenbank – PHP, PDO, SQL
 Kleine CRUD-Anwendung zur Verwaltung von Getränkerezepten in einer relationalen Datenbank.
 
 Behandelte Themen:
@@ -39,7 +56,7 @@ Behandelte Themen:
 
 Ordner: [`rezeptdatenbank/`](rezeptdatenbank/)
 
-### 3. Barista-Automat – HTML, CSS, JavaScript
+### 4. Barista-Automat – HTML, CSS, JavaScript
 Frühe Browser-Stufe der Barista-Unterrichtsreihe mit einfacher Zustandslogik für Aufheizen, Getränkeauswahl und Start.
 
 **Live-Demo:** https://413xc0d3.github.io/fiae-learning-portfolio/barista/
@@ -58,7 +75,7 @@ Behandelte Themen:
 
 Ordner: [`barista-javascript/`](barista-javascript/)
 
-### 4. Barista-Automat – PHP, Sessions und Zustandslogik
+### 5. Barista-Automat – PHP, Sessions und Zustandslogik
 Spätere Unterrichtsstufe des Getränkeautomaten mit Zustandsverwaltung über PHP-Sessions.
 
 Behandelte Themen:
@@ -72,7 +89,7 @@ Behandelte Themen:
 
 Ordner: [`barista-automat-php/`](barista-automat-php/)
 
-### 5. Struktogramm-Fehleranalyse – Python
+### 6. Struktogramm-Fehleranalyse – Python
 Lernbeispiel zur Simulation und Analyse fehlerhafter Programmlogik bei einer Parkhausbelegung.
 
 Behandelte Themen:
@@ -85,7 +102,7 @@ Behandelte Themen:
 
 Ordner: [`python-struktogramm-debugging/`](python-struktogramm-debugging/)
 
-### 6. Python – Grundlagen, Datei-I/O und Datenbankzugriff
+### 7. Python – Grundlagen, Datei-I/O und Datenbankzugriff
 Ausgewählte, gemeinsam im Unterricht erarbeitete Python-Übungen zu grundlegender Programmlogik, Dateiverarbeitung, Dictionaries und MySQL/MariaDB.
 
 Behandelte Themen:
@@ -100,7 +117,7 @@ Ordner: [`python-grundlagen/`](python-grundlagen/)
 
 > Einordnung: Die Beispiele wurden gemeinsam im Unterricht anhand der zugehörigen Aufgabenstellungen erarbeitet. Sie dokumentieren den behandelten Lernstand und werden nicht als vollständig eigenständig entwickelte Anwendungen dargestellt.
 
-### 7. Python – Dokumentzuordnung für Verwaltungsobjekte
+### 8. Python – Dokumentzuordnung für Verwaltungsobjekte
 Skript zur automatischen Zuordnung unsortierter Dokumente zu Verwaltungsobjekten anhand des Dateinamens, basierend auf einer realen Aufgabenstellung aus meiner früheren Tätigkeit in der Dokumentendigitalisierung (alle Beispieldaten frei erfunden).
 
 **Eigenständig entwickelt:** Anders als die übrigen Projekte in diesem Repository ist dieses Skript keine Unterrichtsaufgabe, sondern eine eigene Idee, aufbauend auf den Grundlagen aus [`python-grundlagen`](python-grundlagen/). Geschrieben habe ich den Code selbst, Claude fungierte als Tutor: Konzepte erklärt, Rückfragen beantwortet, auf typische Anfängerfehler hingewiesen.
@@ -113,7 +130,7 @@ Behandelte Themen:
 
 Ordner: [`python-dokumentzuordnung/`](python-dokumentzuordnung/)
 
-### 8. Python – Datenabgleich zwischen zwei Systemen
+### 9. Python – Datenabgleich zwischen zwei Systemen
 Kleine Übung zum Vergleich zweier Datenbestände (z. B. IDs aus zwei Systemen), als Grundlage für die Prüfung der Datenqualität zwischen zwei Datenquellen.
 
 **Eigenständige Erweiterung:** Aufbauend auf der Basisübung (Auffinden von Abweichungen per Mengendifferenz) wurde exemplarisch eine Schnittmengen-Funktion ergänzt, die die in beiden Systemen übereinstimmenden IDs ermittelt.
@@ -125,7 +142,7 @@ Behandelte Themen:
 
 Ordner: [`python-datenabgleich/`](python-datenabgleich/)
 
-### 9. Begrüßungsbeispiel – Java, OOP und MVC
+### 10. Begrüßungsbeispiel – Java, OOP und MVC
 Kleine Konsolenanwendung zur grundlegenden Trennung von Verarbeitung, Ein-/Ausgabe und Steuerung nach dem Model-View-Controller-Prinzip.
 
 Behandelte Themen:

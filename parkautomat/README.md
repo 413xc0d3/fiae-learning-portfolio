@@ -26,12 +26,19 @@ In der ursprünglichen Unterrichtsversion konnten Fahrzeuge eingeparkt und in ei
 
 Beim Anklicken wird das zugehörige Fahrzeug anhand seiner Position mit `splice()` aus dem Array entfernt. Anschließend wird die Fahrzeugliste neu aufgebaut und eine Meldung mit dem ausgeparkten Kennzeichen angezeigt.
 
+In einem zweiten Schritt wurde daraus ein zweistufiger Ablauf: Der Auspark-Button berechnet
+zunächst nur die Parkdauer und die fällige Gebühr (2,50 € je angefangene Stunde, gedeckelt auf
+15 €) und zeigt sie an. Erst der danach eingeblendete Button "Bezahlen und ausparken" entfernt
+das Fahrzeug tatsächlich aus der Liste.
+
 ### Neue Funktionen
 
 - eigener Auspark-Button für jedes geparkte Fahrzeug
 - gezieltes Entfernen des ausgewählten Fahrzeugs aus dem Array
 - erneutes Rendern der Fahrzeugliste nach dem Ausparken
 - Erfolgsmeldung mit dem Kennzeichen des ausgeparkten Fahrzeugs
+- Berechnung von Parkdauer und Gebühr aus der Zeitdifferenz zur Einfahrt
+- Bezahlbestätigung als zweiter Schritt vor dem endgültigen Ausparken
 
 ## Entstehung
 Nach einer Einführung in das jeweilige Thema wurden die Aufgaben zunächst selbstständig bearbeitet. Anschließend wurde die Lösung gemeinsam im Unterricht erarbeitet, besprochen und nachvollzogen. Den eigenen Arbeitsstand habe ich danach entsprechend korrigiert und vervollständigt.
